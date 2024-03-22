@@ -1,0 +1,35 @@
+{
+  "extends": "aegir/src/config/tsconfig.aegir.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "emitDeclarationOnly": false,
+    "module": "ES2020"
+  },
+  "include": [
+    "src",
+    "test"
+  ],
+  "exclude": [
+    "src/pb/peer.js"
+  ],
+  "references": [
+    {
+      "path": "../libp2p-interface-compliance-tests"
+    },
+    {
+      "path": "../libp2p-interfaces"
+    },
+    {
+      "path": "../libp2p-logger"
+    },
+    {
+      "path": "../libp2p-peer-id"
+    },
+    {
+      "path": "../libp2p-peer-id-factory"
+    },
+    {
+      "path": "../libp2p-peer-record"
+    }
+  ]
+}
